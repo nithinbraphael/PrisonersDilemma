@@ -24,11 +24,13 @@ class Strategy{
 } s1, s2;
 
 bool S1Behaviour(vector<int> history){
+    //Modify strategy here, by default on tit for tat
     if (history.empty()) return 1;
     else return history.back();
 }
 
 bool S2Behaviour(vector<int> history){
+    //By default cooperates every round
     return 1;
 }
 
